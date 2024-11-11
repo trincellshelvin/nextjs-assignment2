@@ -1,5 +1,17 @@
 import "@/styles/globals.css";
+import React from 'react';
+import Counter from './counter/index';
+import './index.css';
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+
+function App({ Component, pageProps }) {
+  return (
+    <div className="App">
+      <Component {...pageProps} />
+      <Counter />
+    </div>
+  );
 }
+
+export default App;
+
